@@ -517,4 +517,20 @@ public class Create {
 			if(gc_angle < 0) gc_angle = gc_angle + 360;
 			return gc_angle;
 	}
+	
+	public boolean getLBump(float lag) {
+			return lowCreate.get_create_lbump(lag) == 1;
+	}
+	
+	public boolean getRBump(float lag) {
+			return lowCreate.get_create_rbump(lag) == 1;
+	}
+	
+	public boolean getLBump() {
+			return lowCreate.get_create_lbump(this.lag) == 1;
+	}
+	
+	public boolean getRBump() {
+			return lowCreate.get_create_rbump(this.lag) == 1;
+	}
 }
